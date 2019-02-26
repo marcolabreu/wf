@@ -1,17 +1,20 @@
 <?php
 namespace DimensionalMath\Vector;
+class getVectorAngle {
 
-function vectorAngle($vectorA, $vectorB)
-{
+    static function vectorAngle($vectorA, $vectorB)
+    {
 
-    $pi = pi();
+        $pi = pi();
 
-    list($ax, $ay) = $vectorA;
-    list($bx, $by) = $vectorB;
+        list($ax, $ay) = $vectorA;
+        list($bx, $by) = $vectorB;
 
-    $i = (acos((($ax * $ay) + ($bx * $by)) / (sqrt(($ax * $ax) + ($bx * $bx)) * sqrt(($ay * $ay) + ($by * $by)))) * 360) / ($pi * 2);
+        $i = (acos((($ax * $ay) + ($bx * $by)) / (sqrt(($ax * $ax) + ($bx * $bx)) * sqrt(($ay * $ay) + ($by * $by)))) * 360) / ($pi * 2);
 
-    return $i;
+        return $i;
+    }
 }
+
 
 
