@@ -1,11 +1,6 @@
 <?php
 
-namespace DimensionalMath\Vector;
-
-class getVectorAngle
-{
-
-    static function vectorAngle($vectorA, $vectorB)
+   function vectorAngle($vectorA, $vectorB)
     {
 
         $pi = pi();
@@ -17,7 +12,9 @@ class getVectorAngle
 
         return $i;
     }
-}
+
+
+
 
 
 

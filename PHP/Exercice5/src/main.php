@@ -11,4 +11,4 @@ $distance = threeDimensionDistance(
     [2, 2, 2]
 );
 
-$angle = getVectorAngle::vectorAngle([1, 6], [3, 12]);
+$angle = vectorAngle([1, 6], [3, 12]);
