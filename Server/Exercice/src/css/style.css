@@ -1,0 +1,21 @@
+h1 {
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  font-size: 6rem;
+  font-weight: 600;
+  text-align: right;
+}
+h2 {
+  color: #922;
+  font-family: "IBM Plex Sans", "Courier New", Courier, monospace;
+  font-size: 3rem;
+  font-weight: 500;
+  flex: 1 0 100%;
+}
+img {
+  float: right;
+  flex: 0 1 3rem;
+}
+article {
+  display: flex;
+  flex-wrap: wrap;
+}
