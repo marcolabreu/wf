@@ -1,5 +1,5 @@
 <?php include('header.html'); ?>
-<?php include('pdo.php'); ?>
+<?php require('pdo.php'); ?>
 
 <body>
 <h1>TagBeSill</h1>
@@ -11,8 +11,10 @@ while ($row = $articles->fetch()) {
 
     <article>
         <h2><?php echo $row['title'] ?></h2>
-        <img src="<?php echo $row['img'] ?>">
-        <p><?php echo $row['description'] ?></p>
+        <div class="flex">
+            <p><?php echo $row['description'] ?></p>
+            <img src="<?php echo $row['img'] ?>">
+        </div>
     </article>
 
 
