@@ -1,10 +1,12 @@
-<?php
-include "_addpage_header.html";
-require "_get-token.php";
-?>
+<?php require "_get-token.php"; ?>
 
+
+<!doctype html>
+<html lang="en">
+<?php include "_addpage_head.html"; ?>
 <body class=container>
 <h1 class=title-design>Add a project :</h1>
+
 <form method=GET action=addpage.php>
     <div class=form-group>
         <label for=addProject_title>Tip a title for your project</label>
@@ -23,4 +25,6 @@ require "_get-token.php";
         <button class="btn btn-default" type=submit>Submit</button>
     </div>
 </form>
+
 </body>
+</html>

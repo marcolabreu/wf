@@ -1,9 +1,10 @@
-<?php include('_homepage_header.html'); ?>
 <?php require('_pdo.php'); ?>
 
+<!doctype html>
+<html lang="en">
+<?php include('_homepage_head.html'); ?>
 <body>
 <h1>TagBeSill</h1>
-<form></form>
 <?php
 $articles = $pdo->query('SELECT * FROM article');
 while ($row = $articles->fetch()) {
