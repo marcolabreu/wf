@@ -1,8 +1,8 @@
-<?php require('_pdo.php'); ?>
 
 <!doctype html>
 <html lang="en">
 <?php include('_homepage_head.html'); ?>
+<?php require('_pdo.php'); ?>
 <body>
 <h1>TagBeSill</h1>
 <?php
