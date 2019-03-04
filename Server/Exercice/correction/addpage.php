@@ -3,7 +3,7 @@ include "_header.php";
 require "_get-token.php";
 ?>
 
-<body class=container>
+<div class=container>
 <h1 class=title-design>Add a project :</h1>
 <form method=GET action=addpage.php>
     <div class=form-group>
@@ -23,4 +23,4 @@ require "_get-token.php";
         <button class="btn btn-default" type=submit>Submit</button>
     </div>
 </form>
-</body>
+</div>
