@@ -9,4 +9,8 @@ function generateToken() : string {
 
     return openssl_encrypt($requestId, $cipher, gethostname(), OPENSSL_ZERO_PADDING, $iv, $tag);
 }
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET'){
+    $token = generateToken();
+}
 ?>

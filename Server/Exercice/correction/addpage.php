@@ -1,9 +1,9 @@
 <?php
-include "_header.php";
+include "_addpage_header.html";
 require "_get-token.php";
 ?>
 
-<div class=container>
+<body class=container>
 <h1 class=title-design>Add a project :</h1>
 <form method=GET action=addpage.php>
     <div class=form-group>
@@ -23,4 +23,4 @@ require "_get-token.php";
         <button class="btn btn-default" type=submit>Submit</button>
     </div>
 </form>
-</div>
+</body>

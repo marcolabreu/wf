@@ -1,11 +1,10 @@
-<?php include('header.html'); ?>
-<?php require('pdo.php'); ?>
+<?php include('_homepage_header.html'); ?>
+<?php require('_pdo.php'); ?>
 
 <body>
 <h1>TagBeSill</h1>
-
+<form></form>
 <?php
-include 'addpage.php';
 $articles = $pdo->query('SELECT * FROM article');
 while ($row = $articles->fetch()) {
     ?>
