@@ -1,4 +1,5 @@
 <?php
+
 namespace Model;
 
 class User
@@ -8,7 +9,7 @@ class User
     protected $password;
     protected $salt;
     protected $username;
-    
+
     public function getId()
     {
         return $this->id;
@@ -16,28 +17,34 @@ class User
 
     public function getRoles()
     {
-        return $this->roles;
+        $labels = [Role::ROLE_USER];
+        foreach ($this->roles as $role) {
+            array_push($labels, $role->getLabel());
+        }
+
+        return array_unique($labels);
+    }
+
+    public function setRoles(array $roles)
+    {
+        $this->roles = [];
+        foreach ($roles as $role) {
+            $this->addRole($role);
+        }
+        return $this;
+    }
+
+    public function addRole(Role $role)
+    {
+        if (!in_array($role, $this->roles)) {
+            array_push($this->roles, $role);
+        }
+        return $this;
     }
 
     public function getPassword()
     {
         return $this->password;
-    }
-
-    public function getSalt()
-    {
-        return $this->salt;
-    }
-
-    public function getUsername()
-    {
-        return $this->username;
-    }
-
-    public function setRoles($roles)
-    {
-        $this->roles = $roles;
-        return $this;
     }
 
     public function setPassword($password)
@@ -46,10 +53,20 @@ class User
         return $this;
     }
 
+    public function getSalt()
+    {
+        return $this->salt;
+    }
+
     public function setSalt($salt)
     {
         $this->salt = $salt;
         return $this;
+    }
+
+    public function getUsername()
+    {
+        return $this->username;
     }
 
     public function setUsername($username)
