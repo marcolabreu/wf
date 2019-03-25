@@ -77,15 +77,6 @@ class User
         return $this;
     }
 
-    /**
-     * @return User
-     */
-    public function eraseCredentials()
-    {
-        $this->password = null;
-        $this->salt = null;
-        return $this;
-    }
 
     /**
      * @return string
@@ -105,5 +96,13 @@ class User
         return $this;
     }
 
-
+    /**
+     * @return User
+     */
+    public function eraseCredentials()
+    {
+        $this->password = null;
+        $this->salt = null;
+        return $this;
+    }
 }
