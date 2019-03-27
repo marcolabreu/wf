@@ -1,0 +1,16 @@
+{
+    "name": "student/exercice4",
+    "description": "OOP Exercise 4",
+    "type": "project",
+    "require": {
+        "symfony/security": "@stable"
+    },
+    "license": "Copyrighted",
+    "authors": [
+        {
+            "name": "Marco L Abreu",
+            "email": "marcolabreu@windows.example.com"
+        }
+    ],
+    "minimum-stability": "beta"
+}
