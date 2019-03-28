@@ -3,14 +3,20 @@
     "description": "OOP Exercise 4",
     "type": "project",
     "require": {
-        "symfony/security": "@stable"
+        "symfony/security": "^4.2@stable"
     },
-    "license": "Copyrighted",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Marco L Abreu",
             "email": "marcolabreu@windows.example.com"
         }
     ],
-    "minimum-stability": "beta"
+    "minimum-stability": "beta",
+    "autoload": {
+        "psr-4": {
+            "Model\\": "Model/",
+            "Exception\\": "Exception/"
+        }
+    }
 }
